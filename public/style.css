@@ -1,0 +1,144 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body * {
+    color: #231123;
+}
+
+.dark-mode {
+    background-color: #231123;
+}
+
+.dark-mode * {
+    color:rgb(199, 199, 199);
+}
+.dark-mode .row *[type="button"] {
+    background-color: #372554;
+}
+
+.dark-mode .row .button-secondary {
+    background-color: #4C477E
+}
+
+.dark-mode .row .button-secondary:focus {
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 2px #4C477E;
+}
+
+.dark-mode .row .button-primary:focus {
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 2px #372554;
+}
+
+.dark-mode .row .button-secondary:hover {
+    background-color:#9db2eb;
+    transition: 0.7s;
+    
+}
+.dark-mode .row #clear.button-secondary:focus {
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 2px #4C477E;
+
+    
+}
+.dark-mode .row .button-primary:hover {
+    background-color:#9db2eb;
+    transition: 0.7s;
+    
+}
+
+
+form {
+  padding: 16px;
+  border-radius: 16px;
+  width: 400px;
+  height: 600px;
+  max-width: 100%;
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px); 
+}
+
+.row {
+    display:flex;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.row *[type="button"] {
+    flex:1 25%;
+    aspect-ratio: 1;
+    border-radius:25px;
+    background-color: #7c9eb2c6;
+    max-height: 75px;
+    transform: scale(1.0);
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    border: none;
+
+}
+
+.row input[type="text"] {
+    height: 150px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #52528c7b;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:30px;
+    border: none;
+    padding: 16px;
+
+}
+
+#clear {
+    flex: 1 calc(75% + 32px);
+    border-radius:25px;
+    aspect-ratio: 0;
+    padding: 16px;
+    max-height: 75px;
+    transform: scale(1.0);
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.row #clear.button-secondary:focus {
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 2px #7c9eb2c6;
+}
+
+.row .button-primary:focus {
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 2px #7c9eb2c6;
+}
+
+.row .button-primary:hover {
+    background-color:#274167;
+    transition: 0.7s;
+    
+}
+
+.row .button-secondary {
+    background-color: #728BA9;
+}
+
+.row .button-secondary:focus {
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 2px #728BA9;
+}
+
+.row .button-secondary:hover {
+    background-color:#274167;
+    transition: 0.7s;
+    
+}
+

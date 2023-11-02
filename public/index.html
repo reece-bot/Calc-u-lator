@@ -1,0 +1,146 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form name="calculator">
+      <div class="row">
+        <input id="calc" type="text" name="answer" />
+      </div>
+
+      <div class="row">
+        <input
+          type="button"
+          class="button-primary"
+          value="1"
+          onclick="calculator.answer.value +='1'"
+        />
+        <input
+          type="button"
+          class="button-primary"
+          value="2"
+          onclick="calculator.answer.value +='2'"
+        />
+        <input
+          type="button"
+          class="button-primary"
+          value="3"
+          onclick="calculator.answer.value +='3'"
+        />
+        <input
+          type="button"
+          class="button-secondary"
+          value="+"
+          onclick="calculator.answer.value +='+'"
+        />
+      </div>
+      <div class="row">
+        <input
+          type="button"
+          class="button-primary"
+          value="4"
+          onclick="calculator.answer.value +='4'"
+        />
+        <input
+          type="button"
+          class="button-primary"
+          value="5"
+          onclick="calculator.answer.value +='5'"
+        />
+        <input
+          type="button"
+          class="button-primary"
+          value="6"
+          onclick="calculator.answer.value +='6'"
+        />
+        <input
+          type="button"
+          class="button-secondary"
+          value="-"
+          onclick="calculator.answer.value +='-'"
+        />
+      </div>
+      <div class="row">
+        <input
+          type="button"
+          class="button-primary"
+          value="7"
+          onclick="calculator.answer.value +='1'"
+        />
+        <input
+          type="button"
+          class="button-primary"
+          value="8"
+          onclick="calculator.answer.value +='2'"
+        />
+        <input
+          type="button"
+          class="button-primary"
+          value="9"
+          onclick="calculator.answer.value +='3'"
+        />
+        <input
+          type="button"
+          class="button-secondary"
+          value="*"
+          onclick="calculator.answer.value +='*'"
+        />
+      </div>
+      <div class="row">
+        <input
+          type="button"
+          class="button-secondary"
+          value="/"
+          onclick="calculator.answer.value +='/'"
+        />
+        <input
+          type="button"
+          class="button-primary"
+          value="0"
+          onclick="calculator.answer.value +='0'"
+        />
+        <input
+          type="button"
+          class="button-secondary"
+          value="."
+          onclick="calculator.answer.value +='.'"
+        />
+        <input
+          type="button"
+          class="button-secondary"
+          value="="
+          onclick="calculator.answer.value =eval(calculator.answer.value)"
+        />
+      </div>
+      <div class="row">
+        <input
+          type="button"
+          class="button-secondary"
+          value="Clear All"
+          onclick="form.answer.value =''"
+          id="clear"
+        />
+        <button
+          id="dark-mode-toggle"
+          class="button-secondary"
+          type="button"
+          onclick="toggleDarkMode()"
+        >
+          🌙
+        </button>
+      </div>
+      <script>
+        function toggleDarkMode() {
+          document.body.classList.toggle("dark-mode");
+
+          const toggleButton = document.getElementById("dark-mode-toggle");
+          toggleButton.textContent =
+            toggleButton.textContent === "🌙" ? "☀️" : "🌙";
+        }
+      </script>
+    </form>
+  </body>
+</html>
